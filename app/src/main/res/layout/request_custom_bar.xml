@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/request_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textlines"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:visibility="invisible">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_bar_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_avatar"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/requests_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/custom_bar_image"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/requests_bar_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/requests_bar_name"
+        android:text="mengajak berteman ?"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/requests_friend_accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/requests_bar_name"
+        android:layout_below="@+id/requests_bar_name"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Ya"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/requests_friend_decline_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/requests_friend_accept_btn"
+        android:layout_alignBottom="@+id/requests_friend_accept_btn"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/requests_friend_accept_btn"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Tidak"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>
